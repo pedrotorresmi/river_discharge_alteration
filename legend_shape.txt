@@ -1,0 +1,74 @@
+=========================================================================================================================================
+------------------------------------------------- LEGEND SHAPEFILE simuMGB_geral --------------------------------------------------------
+=========================================================================================================================================
+
+1. altAbsMin/altAbsMean/altAbsMax: discharge absolute alteration [m³/s]
+
+2. altPerMin/altPerMean/altPerMax: discharge percentage alteration (DISPLAYED IN FIGURE 2 - TOP)
+
+3. Tsign_qmin/Tsign_qmean/Tsign_qmax: student's t-test's significant change signal (p-value = 0.05)
+
+	-1 = discharge decrease
+	0 = discharge without significant change
+	1 = discharge increase
+
+4. MKsign_qmin/MKsign_qmean/MKsign_qmax: Mann-Kendal test's significant change signal (p-value = 0.05)
+
+	-1 = discharge decrease
+	0 = discharge without significant change
+	1 = discharge increase
+
+5. altAbsSenMi/altAbsSenMe/altAbsSenMa: discharge absolute alteration [m³/s] using Sen's slope
+
+6. altPerLinMi/altPerLinMe/altPerLinMa: discharge percentage alteration using linear regression
+
+7. TMKqmin/TMKqmean/TMKqmax: combination 1 of t-test and MK test results
+
+	-1 = both tests indicate significant decrease
+	0 = at least one of the tests does not indicate significant change
+	1 = both tests indicate significant increase
+
+8. StdMin/StdMean/StdMax: discharge standard deviation [m³/s]
+
+9. altPerStdMi/altPerStdMe/altPerStdMa: percentage alteration of standard deviation
+
+10. cTMKqmin/cTMKqmean/cTMKqmax: combination 2 of t-test and MK test results (DISPLAYED IN FIGURE 2 - BOTTOM)
+
+	-1 = at least one of the tests indicates significant decrease
+	0 = neither of the tests indicate significant change
+	1 = at least one of the tests indicates significant increase
+
+======================================================================================================================================
+------------------------------------------------- LEGEND SHAPEFILE sacci_geral -------------------------------------------------------
+======================================================================================================================================
+
+1. q_mean45/q_mean85: mean percentage alteration of long term discharge for RCP 4.5 and RCP 8.5 scenarios (DISPLAYED IN FIGURE 3b)
+
+2. q_sign45/q_sign85: significant percentage alteration of long term discharge for RCP 4.5 and RCP 8.5 scenarios
+
+3. q_agree45/q_agree85: agreement between SACCI's 25 GCMs ensemble for RCP 4.5 and RCP 8.5 scenarios
+
+	-1 = agree with discharge decrease
+	0 = disagree
+	1 = agree with discharge increase
+
+4. agr_m45/agr_m85: agreement between mean percentage alteration for RCP 4.5 and RCP 8.5 scenarios and percentage alteration from 1980 to 2019 (shape simuMGB_geral2) (DISPLAYED IN FIGURE 3c)
+
+	-1/1/11 = agree with discharge decrease/increase/steadiness
+	-2/2 = partially agree with discharge decrease/increase
+	3 = partially disagree
+	0 = disagree
+	5 = undefined (there is no agreement between the 25 GCMs)
+
+======================================================================================================================================
+------------------------------------------------- LEGEND SHAPEFILE obsANA -------------------------------------------------------
+======================================================================================================================================
+
+1. altPerMin/altPerMean/altPerMax: percentage alteration of observed river discharge
+
+2. agrMin/agrMean/agrMax: agreement between observation (ANA) and simulation (MGB-SA) discharge alteration (DISPLAYED IN FIGURE 1)
+
+	-1/1/11 = agree with discharge decrease/increase/steadiness
+	-2/2 = partially agree with discharge decrease/increase
+	3 = partially disagree
+	0 = disagree
